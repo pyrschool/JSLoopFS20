@@ -6,12 +6,14 @@
     <title>What do I owe you?</title>
     <script>
         var debt = window.prompt("How much dow you want?");
-        var amount = window.prompt("Give me my money!!!");
-        debt = debt - amount;
-        window.alert("Thanks! Now you owe me " + debt)
+        while (debt>0) {
+            var amount = window.prompt("Give me my money!!!");
+            debt = debt - amount;
+            window.alert("Thanks! Now you owe me " + debt)
+        }
     </script>
 </head>
 <body>
-    <p>The problem is tha it asks only once. It should ask until the loan is payed back.</p>
+    <p>Try to give a loan of 0 (zero). How many time will the loop execute?.</p>
 </body>
 </html>
