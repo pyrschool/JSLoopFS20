@@ -4,8 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>What do I owe you?</title>
+    <script>
+        var debt = window.prompt("How much dow you want?");
+        var amount = window.prompt("Give me my money!!!");
+        debt = debt - amount;
+        window.alert("Thanks! Now you owe me " + debt)
+    </script>
 </head>
 <body>
-    <p>The page gives the user a loan; it prompts the user for the amount. Then the page asks for the payback; it prompts the user to give back the money. The user gives a part of the loan. The page informs on the new balance and keeps asking for the payback.</p>
+    <p>The problem is tha it asks only once. It should ask until the loan is payed back.</p>
 </body>
 </html>
