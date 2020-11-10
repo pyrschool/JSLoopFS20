@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for / while</title>
+    <script>
+        document.write("<hr>");
+        document.write("<h3>repeating 5 times</h3>");
+        for (var i = 0; i < 5; i++) {
+            document.write("<p>Code to repeat</p>");
+        }
+
+        document.write("<hr>");
+        document.write("<h3>repeating 5 times - countdown</h3>");
+        for (var j = 5; j > 0; j--) {
+            document.write("<p>Code to repeat</p>");
+        }
+
+        document.write("<hr>");
+        document.write("<h3>repeat while the number is negative</h3>");
+        var num = -5;
+        while (num < 0) {
+            document.write("<p>Code to repeat</p>");
+            num++; // if you ommit this then the loop will execute forever (infinite loop)
+        }
+
+        document.write("<hr>");
+        document.write("<h3>repeat while the number is positive</h3>");
+        var num2 = 5;
+        while (num2 > 0) {
+            document.write("<p>Code to repeat</p>");
+            num2--; // if you ommit this then the loop will execute forever (infinite loop)
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
