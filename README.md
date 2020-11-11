@@ -13,3 +13,9 @@ Here is a sample execution
 1. the page alerts "Ok, now you owe me 80".
 1. The user still owes money so we repeat from step 2
 1. When The loan is payed back then the page should not prompt for payback anymore and thank the user.
+
+## myname.html
+The page prompts the user to say the author's name (that's your name :) ). As long as the user writes something else, the page prompts again. When he writes your name, say "congrats".
+
+As an addition, keep rtack on haow many times the user tried. After he writes your name you say "congrats, it took you 4 times".
+
