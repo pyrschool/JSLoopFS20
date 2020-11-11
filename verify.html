@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Appointments</title>
+    <script>
+        var currentYear = 2020;
+        var year = prompt("Year of birth. Please note that only adults can book appointments");
+        while (currentYear - year < 18) {
+            year = prompt("Year of birth. You are a minor, only adults can book appointments");
+        }
+        
+    </script>
 </head>
 <body>
     <p>Book an appointment.</p>
