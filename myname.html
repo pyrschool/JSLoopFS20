@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Say my name</title>
+    <script>
+        var name = window.prompt("What's my name?");
+        while (name != "Denis") {
+            name = window.prompt("You got it wrong! What's my name?");
+        }
+        window.alert("Nice to meet you");
+    </script>
 </head>
 <body>
     <p>Say my name!</p>
