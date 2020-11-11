@@ -10,6 +10,10 @@
         while (currentYear - year < 18) {
             year = prompt("Year of birth. You are a minor, only adults can book appointments");
         }
+        var amka = prompt("Your AMKA");
+        while (amka.length != 11) {
+            amka = prompt("Your AMKA seems invalid, please give it again");
+        }
         
     </script>
 </head>
