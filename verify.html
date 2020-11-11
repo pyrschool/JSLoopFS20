@@ -6,18 +6,23 @@
     <title>Appointments</title>
     <script>
         var currentYear = 2020;
-        var year = prompt("Year of birth. Please note that only adults can book appointments");
+        var year = window.prompt("Year of birth. Please note that only adults can book appointments");
         while (currentYear - year < 18) {
-            year = prompt("Year of birth. You are a minor, only adults can book appointments");
+            year = window.prompt("Year of birth. You are a minor, only adults can book appointments");
         }
-        var amka = prompt("Your AMKA");
+        var amka = window.prompt("Your AMKA");
         while (amka.length != 11) {
-            amka = prompt("Your AMKA seems invalid, please give it again");
+            amka = window.prompt("Your AMKA seems invalid, please give it again");
         }
-        var specialty = prompt("Which specialty are you interested at? You may write PATH, CARD, ORTH or OPHTH");
+        var specialty = window.prompt("Which specialty are you interested at? You may write PATH, CARD, ORTH or OPHTH");
         while (specialty != "PATH" && specialty != "CARD" && specialty != "ORTH" && specialty != "OPHTH") {
-            specialty = prompt( specialty + " is a specialty I do not understand. You may write PATH, CARD, ORTH or OPHTH");
+            specialty = window.prompt( specialty + " is a specialty I do not understand. You may write PATH, CARD, ORTH or OPHTH");
         }
+        var fullName = window.prompt("What is you name?");
+        while (fullName.length == 0) {
+            fullName = window.prompt("What is you name?");
+        }
+        window.alert(fullName + ", born at " + year + ", AMKA [" + amka+"], you have an appointment with " + specialty)
         
     </script>
 </head>
