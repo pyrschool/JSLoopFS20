@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Say my name</title>
     <script>
+        var counter = 1; // we start at 1 because it will answer one time, at the beginning
         var name = window.prompt("What's my name?");
         while (name != "Denis") {
+            counter++; // we are giving one more prompt, count it
             name = window.prompt("You got it wrong! What's my name?");
         }
-        window.alert("Nice to meet you");
+        window.alert("It took you " + counter + " times!");
     </script>
 </head>
 <body>
