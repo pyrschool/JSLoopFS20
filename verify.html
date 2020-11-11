@@ -14,6 +14,10 @@
         while (amka.length != 11) {
             amka = prompt("Your AMKA seems invalid, please give it again");
         }
+        var specialty = prompt("Which specialty are you interested at? You may write PATH, CARD, ORTH or OPHTH");
+        while (specialty != "PATH" && specialty != "CARD" && specialty != "ORTH" && specialty != "OPHTH") {
+            specialty = prompt( specialty + " is a specialty I do not understand. You may write PATH, CARD, ORTH or OPHTH");
+        }
         
     </script>
 </head>
